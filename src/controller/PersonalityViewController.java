@@ -1,36 +1,5 @@
 package controller;
 
-import java.util.*;
-
-import service.PersonalityCalculator;
-
-
-public class PersonalityViewController{
-	public static void main(String args[]){  
-		Scanner sc=new Scanner(System.in);
-		String output;
-		String data=sc.next();
-		PersonalityCalculator PC = new PersonalityCalculator();
-		output=PC.findYourBrainType(data);
-		System.out.println(output);
-		sc.close();
-		 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*	package controller;
-
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
@@ -65,8 +34,9 @@ public class PersonalityViewController extends HttpServlet {
 		
 		System.out.println(options);
 				
-		/* 
+		
 
+		Object message = null;
 		request.setAttribute("message", message);
 		
 		if(message!=null)
@@ -84,8 +54,8 @@ public class PersonalityViewController extends HttpServlet {
 				rd.forward(request, response);
 			}
 		
-		}*/
-	//	}
-	//}
+		}
+		}
+	}
 
 
